@@ -6,6 +6,12 @@ This project is a personal portfolio website designed to showcase my skills, pro
 
 The core of this project is the chatbot, which is powered by **n8n.io** and runs on a **Retrieval-Augmented Generation (RAG)** architecture. This allows the chatbot to provide accurate and context-aware answers by retrieving information directly from my personal and professional documents (such as my resume, project descriptions, and articles). The entire process, from data ingestion to answering queries, is fully automated using n8n workflows, creating a powerful, self-updating, and localized knowledge base.
 
+## 📖 About The Project
+
+This project is an AI-powered personal portfolio website designed to serve as a comprehensive showcase of my technical abilities and professional journey. It features a clean, modern interface built with Tailwind CSS for a fully responsive experience.
+
+The core innovation of this portfolio is its integrated digital assistant—an AI chatbot powered by n8n.io. This chatbot leverages a sophisticated Retrieval-Augmented Generation (RAG) model to provide visitors with accurate, context-aware answers based on my personal and professional data. Instead of generic responses, it queries a localized knowledge base built from my resume, project documentation, and other relevant materials, offering a truly interactive and personalized way to learn about my work.
+
 ## ✨ Features
 
 -   **Modern Design:** A sleek and responsive interface built with Tailwind CSS.
