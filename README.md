@@ -61,7 +61,7 @@ This automated RAG pipeline ensures that the chatbot's knowledge is always up-to
 ### n8n Workflows
 
 **Data Ingestion Workflow (Telegram → Vector Store):** This workflow automates the process of updating the knowledge base. It listens for new files on Telegram, processes them, and adds them to the vector store.
-![Data Ingestion Workflow](./n8n-data-ingestion-workflow.png)
+![Data Ingestion Workflow](n8n-data-ingestion-workflow.png)
 
 **AI Agent Workflow (Chat → RAG → Response):** This workflow powers the chatbot itself. It receives a user's question, queries the vector store for relevant context, and uses an LLM to generate the final answer.
-![AI Agent Workflow](./n8n-rag-agent-workflow.png)
+![AI Agent Workflow](n8n-rag-agent-workflow.png)
