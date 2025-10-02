@@ -25,7 +25,7 @@ To run this project on your local machine, follow these steps:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone https://github.com/HamdiOzkurt/n8n_web_sitesi.git
+    git clone https://github.com/HamdiOzkurt/AI-Powered-Portfolio-with-n8n-Chatbot.git
     cd n8n_web_sitesi
     ```
 
