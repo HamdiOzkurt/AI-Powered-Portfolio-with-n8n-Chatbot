@@ -1,0 +1,31 @@
+services:
+  - type: web
+    name: n8n-service # Burayı isterseniz değiştirebilirsiniz
+    env: docker
+    plan: free
+    branch: main
+    region: Frankfurt
+
+    # DÜZELTME: Doğru sağlık kontrolü adresi eklendi
+    healthCheckPath: /healthz
+    
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    
+    envVars:
+      # DİKKAT: Güvenlik için kullanıcı adı ve şifre buradan silindi.
+      # Bunları Render arayüzünden ekleyeceğiz.
+
+      # DÜZELTME: Webhook URL'si dinamik olarak ayarlandı
+      - key: WEBHOOK_URL
+        value: https://${RENDER_EXTERNAL_HOSTNAME}
+      
+      # Zaman dilimi ve diğer ayarlar
+      - key: GENERIC_TIMEZONE
+        value: "Europe/Istanbul" # Berlin yerine Istanbul kullanabilirsiniz
+
+    # Veri kalıcılığı için disk ayarı (Bu kısım mükemmeldi, aynen kalıyor)
+    disk:
+      name: n8n-data
+      mountPath: /home/node/.n8n
+      sizeGB: 1
