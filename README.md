@@ -29,11 +29,10 @@ To run this project on your local machine, follow these steps:
     cd n8n_web_sitesi
     ```
 
-2.  **Add Project Images:**
-    For the website and README to display correctly, place the following images in the root directory of the project:
-    -   `profil.jpg` (for the website)
-    -   `n8n-data-ingestion-workflow.png` (for the README)
-    -   `n8n-rag-agent-workflow.png` (for the README)
+2.  **Create Assets Folder and Add Images:**
+    For the project to display correctly, you need to create an `assets` folder in the root directory, and an `images` subfolder inside it (`assets/images`). Place the following files inside the `assets/images` directory:
+    -   `n8n-data-ingestion-workflow.png`
+    -   `n8n-rag-agent-workflow.png`
 
 3.  **Start the Local Server:**
     While in the project directory, run the following command:
@@ -61,7 +60,7 @@ This automated RAG pipeline ensures that the chatbot's knowledge is always up-to
 ### n8n Workflows
 
 **Data Ingestion Workflow (Telegram → Vector Store):** This workflow automates the process of updating the knowledge base. It listens for new files on Telegram, processes them, and adds them to the vector store.
-![Data Ingestion Workflow](n8n-data-ingestion-workflow.png)
 
 **AI Agent Workflow (Chat → RAG → Response):** This workflow powers the chatbot itself. It receives a user's question, queries the vector store for relevant context, and uses an LLM to generate the final answer.
-![AI Agent Workflow](n8n-rag-agent-workflow.png)
+
+*Note: You can find the visual diagrams for both n8n workflows (`n8n-data-ingestion-workflow.png` and `n8n-rag-agent-workflow.png`) inside the `assets/images` folder in this repository.*
